@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Configuration Files
+This is a colleciton of various configuration files I use
