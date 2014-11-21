@@ -1,0 +1,35 @@
+[user]
+	name = Jared Smartt
+[http]
+[core]
+	autocrlf = input
+[gui]
+[gui]
+
+[alias]
+	# Show status
+	s = status
+
+	# Commit
+	cam = commit -am
+
+	# Show branches
+	br = branch -a
+
+	# Show logs
+	l = log --oneline --decorate --graph
+	l2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+	# List ignored or untracked files
+	lu = ls-files --others --exclude-standard
+	li = ls-files --others --ignored --exclude-standard
+
+	# Show diff
+	dc = diff --color-words
+	ds = diff --color-words --staged
+	dstat = diff --color-words --stat
+
+	# Show aliases
+	aliases = !git config --get-regexp 'alias.*' | sed 's/alias.//' | sed '0,/RE/s/ /\t/'
+	a = !git aliases
+	lu = ls-files --others --exclude-standard
