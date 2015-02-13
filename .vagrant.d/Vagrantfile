@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# Default Vagrantfile
+# Contains defaults for all systems.
+
+VAGRANTFILE_API_VERSION ||= "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+  end
+ 
+  config.vm.network "public_network"
+  #config.vm.network "public_network", :bridge => 'Intel(R) Ethernet Connection I218-LM'
+  
+  config.omnibus.chef_version = :latest
+  
+  # config.vm.synced_folder ".", "/vagrant", disabled: true
+end
