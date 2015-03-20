@@ -11,6 +11,11 @@ alias untar='tar -xvf'
 alias rspec='rspec --color'
 alias path='echo $PATH | tr ":" "\n"'
 alias knife2='/c/opscode/chefdk/embedded/bin/knife'
+alias vs='vagrant status'
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vssh='vagrant ssh'
+alias vp='vagrant provision'
 
 # Start ssh-agent
 env=~/.ssh/agent.env
