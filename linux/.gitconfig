@@ -5,10 +5,13 @@
 	s = status
 
 	# Commit
-	cam = commit -am
+	cm = commit -m
+  cam = commit -am
 
 	# Show branches
+	b = branch
 	br = branch -a
+	bd = branch -d
 
 	# Show logs
 	l = log --oneline --decorate --graph
