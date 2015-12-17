@@ -15,7 +15,7 @@ if [ -f ~/.ssh/id_rsa ]; then
   ssh-add ~/.ssh/id_rsa > /dev/null # 2>&1
 fi
 
-if [ -f ~/.ssh/id_rsa ]; then
+if [ -f ~/.ssh/putty_id_rsa ]; then
   eval "$(ssh-agent -s)" > /dev/null
   ssh-add ~/.ssh/putty_id_rsa > /dev/null # 2>&1
 fi
