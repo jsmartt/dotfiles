@@ -3,13 +3,10 @@
 export EDITOR="vi"
 
 unset VERSION
-if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
-fi
 
 # User specific aliases and functions
 alias ls='ls --color'
-alias ll='ls -lah'
+alias ll='ls -lah --color'
 alias untar='tar -xvf'
 alias rspec='rspec --color'
 alias path='echo $PATH | tr ":" "\n"'
