@@ -1,0 +1,30 @@
+"*":
+  "exception-reporting":
+    userId: "3c3f4e9a-8f26-dd50-3339-754e22d6adcb"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    projectHome: "C:\\Users\\smartt\\workspace"
+    disabledPackages: [
+      "linter-ruby"
+    ]
+  linter:
+    showErrorPanel: false
+  editor:
+    invisibles: {}
+    softWrap: true
+    showIndentGuide: true
+    fontSize: 15
+    fontFamily: "consolas"
+  whitespace:
+    ignoreWhitespaceOnlyLines: false
+    ensureSingleTrailingNewline: true
+    removeTrailingWhitespace: false
+  "linter-ruby":
+    rubyExecutablePath: "/opscode/chefdk/embedded/bin/ruby.exe"
+  "merge-conflicts": {}
+  "autocomplete-plus": {}
