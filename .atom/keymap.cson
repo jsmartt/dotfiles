@@ -26,5 +26,5 @@
 
 'atom-text-editor':
   'ctrl-q': 'editor:toggle-line-comments'
-  'ctrl-c': 'command-palette:toggle'
+  'alt-c': 'command-palette:toggle'
   'ctrl-shift-t': 'whitespace:remove-trailing-whitespace'

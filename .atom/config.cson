@@ -24,6 +24,7 @@
     ignoreWhitespaceOnlyLines: false
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: false
+    ignoreWhitespaceOnCurrentLine: false
   "linter-ruby":
     rubyExecutablePath: "/opscode/chefdk/embedded/bin/ruby.exe"
   "merge-conflicts": {}
