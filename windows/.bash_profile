@@ -36,3 +36,5 @@ if [ -d "/c/opscode/chefdk" ]; then
   export GEM_PATH="$HOME/.chefdk/gem/ruby/$RUBY_VERSION:/c/opscode/chefdk/embedded/lib/ruby/gems/$RUBY_VERSION"
   export CHEFDK_HOME="$HOME/.chefdk"
 fi
+
+if [ $(pwd) == "/" ]; then cd ; fi
