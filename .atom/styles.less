@@ -13,25 +13,61 @@
 }
 
 atom-text-editor {
-
+  .symbol, .string {
+    color: #9e8a02;
+  }
 }
 
 atom-text-editor::shadow {
-  .constant, .string {
+  .symbol, .string {
     color: yellow;
   }
-  .cursor-line {
-    background-color: #363535;
+  .string.single {
+    color: #e2cb00;
+  }
+  .symbol.hashkey {
+    color: #ffff88;
+  }
+  .support.function {
+    color: #e9c2a0;
   }
 }
 
 atom-text-editor, atom-text-editor::shadow {
   line-height: 125%;
-  .section {
+  .section, .separator, .operator {
     color: red;
+  }
+  .control {
+    color: #aa5ce8;
+    font-weight: bold;
   }
   .comment {
     color: #19cf19;
+  }
+  .numeric, {
+    color: orange;
+  }
+  .class, .boolean {
+    color: #5b87e9;
+    font-weight: bold;
+  }
+  .namespace {
+    color: white;
+  }
+  .note {
+    color: #1ddf1d;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .cursor-line {
+    background-color: #363535;
+  }
+  .regexp.punctuation.section, .string.regexp {
+    color: #00A0A0;
+  }
+  .string .punctuation.section.embedded .source {
+    color: red;
   }
 }
 
