@@ -6,21 +6,22 @@ export VAGRANT_PUBLIC_NETWORK_ENABLED_ALREADY=true
 
 alias ls='ls --color'
 alias ll='ls -lah --color'
-alias untar='tar -xvf'
-alias rspec='rspec --color'
-alias path='echo $PATH | tr ":" "\n"'
-alias vagrantfile='vi ~/.vagrant.d/Vagrantfile'
 alias notepad++='start notepad++'
 alias npp='start notepad++'
 alias n++='start notepad++'
+alias untar='tar -xvf'
+alias rspec='rspec --color'
+alias path='echo $PATH | tr ":" "\n"'
 alias knife2='/c/opscode/chefdk/embedded/bin/knife'
 alias vs='vagrant status'
 alias vu='vagrant up'
-alias vh='vagrant halt'
 alias vssh='vagrant ssh'
 alias vp='vagrant provision'
+alias vh='vagrant halt'
+alias vagrantfile='vi ~/.vagrant.d/Vagrantfile'
 alias hostfile='edit_hostfile'
 
+# Add all the secret stuff
 if [ -f ~/.bash_secrets ]; then . ~/.bash_secrets ; fi
 
 # Load ssh keys
@@ -67,6 +68,3 @@ if [ -d "/c/opscode/chefdk" ]; then
   export GEM_PATH="$HOME/.chefdk/gem/ruby/$RUBY_VERSION:/c/opscode/chefdk/embedded/lib/ruby/gems/$RUBY_VERSION"
   export CHEFDK_HOME="$HOME/.chefdk"
 fi
-
-export ONEVIEWSDK_INTEGRATION_CONFIG='~/workspace/_one_view_config.json'
-export ONEVIEWSDK_INTEGRATION_SECRETS='~/workspace/_one_view_secrets.json'
