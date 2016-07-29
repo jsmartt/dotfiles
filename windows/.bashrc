@@ -20,6 +20,7 @@ alias vp='vagrant provision'
 alias vh='vagrant halt'
 alias vagrantfile='vi ~/.vagrant.d/Vagrantfile'
 alias hostfile='edit_hostfile'
+alias sneakyssh='ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile /dev/null"'
 
 # Add all the secret stuff
 if [ -f ~/.bash_secrets ]; then . ~/.bash_secrets ; fi
