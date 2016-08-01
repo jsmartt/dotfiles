@@ -13,7 +13,7 @@ alias path='echo $PATH | tr ":" "\n"'
 alias df='df -h'
 
 # Set bash prompt
-export PS1='\[\033[32m\]\u@\h \[\033[33m\]$PWD\[\033[0m\]\n$ '
+export PS1='\[\033[32m\]\u@\h \[\033[33m\]\$PWD\[\033[0m\]\n$ '
 
 # Download and Source the git-prompt script to load __git_ps1 (shows git branch if in a git repo)
 if [ ! -f ~/.git-prompt.sh ]; then
