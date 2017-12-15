@@ -1,6 +1,7 @@
 [user]
 	name = Jared Smartt
 [core]
+	pager = "less -r" # Wrap git diff output
   # For windows only
 	autocrlf = input
 [alias]
@@ -10,11 +11,15 @@
 	# Commit
 	cm = commit -m
 	cam = commit -am
+	amend = commit -a --amend
 
 	# Show branches
 	b = branch
 	br = branch -a
 	bd = branch -d
+	bdd = branch -D
+
+	ch = checkout
 
 	# Show logs
 	l = log --oneline --decorate --graph
