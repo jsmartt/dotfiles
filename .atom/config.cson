@@ -1,31 +1,23 @@
 "*":
+  "Remote-FTP":
+    connector: {}
+  core:
+    disabledPackages: [
+      "remote-edit"
+    ]
+    projectHome: "/Users/smartt/workspace"
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+    softWrap: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "3c3f4e9a-8f26-dd50-3339-754e22d6adcb"
+    userId: "4660154a-9260-4401-b564-5f4262153c10"
+  "linter-ui-default":
+    panelHeight: 69
+  "remote-edit":
+    filterHostsUsing:
+      port: true
   welcome:
     showOnStartup: false
-  core:
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
-    projectHome: "C:\\Users\\smartt\\workspace"
-    disabledPackages: [
-      "linter-ruby"
-    ]
-  linter:
-    showErrorPanel: false
-  editor:
-    invisibles: {}
-    softWrap: true
-    showIndentGuide: true
-    fontSize: 15
-    fontFamily: "consolas"
-  whitespace:
-    ignoreWhitespaceOnlyLines: false
-    ensureSingleTrailingNewline: true
-    removeTrailingWhitespace: false
-    ignoreWhitespaceOnCurrentLine: false
-  "linter-ruby":
-    rubyExecutablePath: "/opscode/chefdk/embedded/bin/ruby.exe"
-  "merge-conflicts": {}
-  "autocomplete-plus": {}
